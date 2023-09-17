@@ -12,3 +12,4 @@
 
 # Ideaq
     - Add template.py to generate all project files and directories
+    - Add docker file
