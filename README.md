@@ -9,7 +9,7 @@
 
 2. Src folder and build the package
 
-
-# Ideaq
+3. 
+# Ideas
     - Add template.py to generate all project files and directories
     - Add docker file
