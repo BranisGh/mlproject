@@ -44,26 +44,21 @@ AUTHOR_USER_NAME = "BranisGh"
 SRC_REPO = "mlops standard project"
 AUTHOR_EMAIL = "branisghoul02@hotmail.com"
 
-def setup_package():
-    """
-    Configures and sets up the Python package using setuptools.
-    """
-    setuptools.setup(
-        name=REPO_NAME,
-        version=__version__,
-        author=AUTHOR_USER_NAME,
-        author_email=AUTHOR_EMAIL,
-        description=SRC_REPO,
-        long_description=get_readme("README.md"),
-        long_description_content_type="text/markdown",
-        url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
-        project_urls={
-            "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
-        },
-        packages=setuptools.find_packages(where="src"),
-        package_dir={"": "src"},
-        install_requires=get_requirements('requirements.txt')
-    )
 
-if __name__ == "__main__":
-    setup_package()
+setuptools.setup(
+    name=REPO_NAME,
+    version=__version__,
+    author=AUTHOR_USER_NAME,
+    author_email=AUTHOR_EMAIL,
+    description=SRC_REPO,
+    long_description=get_readme("README.md"),
+    long_description_content_type="text/markdown",
+    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
+    project_urls={
+        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
+    },
+    packages=setuptools.find_packages(),
+    install_requires=get_requirements('requirements.txt')
+)
+
+
