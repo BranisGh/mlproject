@@ -1,0 +1,9 @@
+1. Container regestry
+2. Docker set up in local (private) and push container regestry 
+3. Azuez web app with container
+4. Configured the github Deployment center
+
+
+Regestry name : mlprojectregestryname
+Login server : mlprojectregestryname.azurecr.io
+Password : Tvs0T08tb630w0LjZQAj02w5B2HmuFiQOZYPzU9HuA+ACRAktrbZ
