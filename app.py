@@ -43,5 +43,5 @@ def predict_datapoint():
 
 if __name__=="__main__":
     # app.run(host="0.0.0.0", debug=True, port=8000) # 5000     
-    app.run(host="0.0.0.0") # for deploymenet    
+    app.run(host="0.0.0.0", port=80) # for azure deploymenet
 
